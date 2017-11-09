@@ -96,7 +96,7 @@
     
   end
 
-  # Main: Executes the program
+  # Entry Point
   if __FILE__ == $PROGRAM_NAME
     main_processor = Main.new
     main_processor.process
