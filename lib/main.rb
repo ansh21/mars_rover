@@ -65,9 +65,7 @@
         @rover = Rover.new(index, rover_x_val, rover_y_val, rover_orientation_val)
 
         catch :invalid_instruction {
-          lines[1].chomp.each_char { |instrctn|
-            throw :invalid_instruction unless process_instruction(instrctn)
-          }
+          lines[1].chomp.each_char { |instrctn| process_instruction(instrctn) }
         }
 
         curr_x = @rover.get_curr_x
